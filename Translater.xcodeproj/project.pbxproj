@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5247EEF42420B499003E7756 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247EEF32420B499003E7756 /* BaseCoordinator.swift */; };
+		5247EEF62420B5FB003E7756 /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247EEF52420B5FB003E7756 /* ApplicationCoordinator.swift */; };
+		5247EEF82420B696003E7756 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247EEF72420B696003E7756 /* MainCoordinator.swift */; };
+		5247EEFA2420B712003E7756 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247EEF92420B712003E7756 /* MainViewController.swift */; };
 		524E7F8B2420AE35005D1B27 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7F8A2420AE35005D1B27 /* AppDelegate.swift */; };
-		524E7F8D2420AE35005D1B27 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7F8C2420AE35005D1B27 /* SceneDelegate.swift */; };
-		524E7F8F2420AE35005D1B27 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7F8E2420AE35005D1B27 /* ContentView.swift */; };
 		524E7F912420AE36005D1B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524E7F902420AE36005D1B27 /* Assets.xcassets */; };
-		524E7F942420AE36005D1B27 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524E7F932420AE36005D1B27 /* Preview Assets.xcassets */; };
 		524E7F972420AE36005D1B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E7F952420AE36005D1B27 /* LaunchScreen.storyboard */; };
 		524E7FA22420AE36005D1B27 /* TranslaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7FA12420AE36005D1B27 /* TranslaterTests.swift */; };
 		524E7FAD2420AE36005D1B27 /* TranslaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7FAC2420AE36005D1B27 /* TranslaterUITests.swift */; };
@@ -35,12 +36,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5247EEF32420B499003E7756 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		5247EEF52420B5FB003E7756 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		5247EEF72420B696003E7756 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		5247EEF92420B712003E7756 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		524E7F872420AE35005D1B27 /* Translater.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Translater.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		524E7F8A2420AE35005D1B27 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		524E7F8C2420AE35005D1B27 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		524E7F8E2420AE35005D1B27 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		524E7F902420AE36005D1B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		524E7F932420AE36005D1B27 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		524E7F962420AE36005D1B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		524E7F982420AE36005D1B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		524E7F9D2420AE36005D1B27 /* TranslaterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslaterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5247EEED2420B014003E7756 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				524E7F8A2420AE35005D1B27 /* AppDelegate.swift */,
+				524E7F902420AE36005D1B27 /* Assets.xcassets */,
+				524E7F982420AE36005D1B27 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		5247EEEE2420B0C0003E7756 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				5247EEEF2420B0C8003E7756 /* Launch */,
+				5247EEF02420B0D2003E7756 /* Main */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		5247EEEF2420B0C8003E7756 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				524E7F952420AE36005D1B27 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		5247EEF02420B0D2003E7756 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5247EEF92420B712003E7756 /* MainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5247EEF12420B482003E7756 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5247EEF22420B488003E7756 /* Coordinators */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5247EEF22420B488003E7756 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				5247EEF32420B499003E7756 /* BaseCoordinator.swift */,
+				5247EEF52420B5FB003E7756 /* ApplicationCoordinator.swift */,
+				5247EEF72420B696003E7756 /* MainCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		524E7F7E2420AE35005D1B27 = {
 			isa = PBXGroup;
 			children = (
@@ -99,23 +154,11 @@
 		524E7F892420AE35005D1B27 /* Translater */ = {
 			isa = PBXGroup;
 			children = (
-				524E7F8A2420AE35005D1B27 /* AppDelegate.swift */,
-				524E7F8C2420AE35005D1B27 /* SceneDelegate.swift */,
-				524E7F8E2420AE35005D1B27 /* ContentView.swift */,
-				524E7F902420AE36005D1B27 /* Assets.xcassets */,
-				524E7F952420AE36005D1B27 /* LaunchScreen.storyboard */,
-				524E7F982420AE36005D1B27 /* Info.plist */,
-				524E7F922420AE36005D1B27 /* Preview Content */,
+				5247EEF12420B482003E7756 /* Core */,
+				5247EEEE2420B0C0003E7756 /* Flows */,
+				5247EEED2420B014003E7756 /* SupportingFiles */,
 			);
 			path = Translater;
-			sourceTree = "<group>";
-		};
-		524E7F922420AE36005D1B27 /* Preview Content */ = {
-			isa = PBXGroup;
-			children = (
-				524E7F932420AE36005D1B27 /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 		524E7FA02420AE36005D1B27 /* TranslaterTests */ = {
@@ -241,7 +284,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				524E7F972420AE36005D1B27 /* LaunchScreen.storyboard in Resources */,
-				524E7F942420AE36005D1B27 /* Preview Assets.xcassets in Resources */,
 				524E7F912420AE36005D1B27 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,8 +310,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				524E7F8B2420AE35005D1B27 /* AppDelegate.swift in Sources */,
-				524E7F8D2420AE35005D1B27 /* SceneDelegate.swift in Sources */,
-				524E7F8F2420AE35005D1B27 /* ContentView.swift in Sources */,
+				5247EEF82420B696003E7756 /* MainCoordinator.swift in Sources */,
+				5247EEF42420B499003E7756 /* BaseCoordinator.swift in Sources */,
+				5247EEF62420B5FB003E7756 /* ApplicationCoordinator.swift in Sources */,
+				5247EEFA2420B712003E7756 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,9 +479,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Translater/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Translater/Info.plist;
+				INFOPLIST_FILE = Translater/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,9 +497,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"Translater/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Translater/Info.plist;
+				INFOPLIST_FILE = Translater/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
