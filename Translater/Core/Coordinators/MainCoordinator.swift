@@ -21,6 +21,14 @@ final class MainCoordinator: BaseCoordinator {
         let controller = MainViewController()
         controller.coordinator = self
         
+        //MARK: - Pass to DescriptionController
+        controller.toWordDescription = { meaning in
+            let descriptionController = DescriptionViewController()
+            descriptionController.meaning = meaning
+            controller.navigationController?.pushViewController(descriptionController,
+                                                                animated: true)
+        }
+        
         let rootController = UINavigationController(rootViewController: controller)
         setAsRoot(rootController)
         self.rootController = rootController

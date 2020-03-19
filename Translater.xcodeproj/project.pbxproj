@@ -16,6 +16,18 @@
 		524E7F972420AE36005D1B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524E7F952420AE36005D1B27 /* LaunchScreen.storyboard */; };
 		524E7FA22420AE36005D1B27 /* TranslaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7FA12420AE36005D1B27 /* TranslaterTests.swift */; };
 		524E7FAD2420AE36005D1B27 /* TranslaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7FAC2420AE36005D1B27 /* TranslaterUITests.swift */; };
+		5276E3F92423C1A6005C3C84 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276E3F82423C1A6005C3C84 /* DescriptionViewController.swift */; };
+		528323DE2422431900D3D8BA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DC2422431900D3D8BA /* SnapKit.framework */; };
+		528323DF2422431900D3D8BA /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DC2422431900D3D8BA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		528323E02422431900D3D8BA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DD2422431900D3D8BA /* Alamofire.framework */; };
+		528323E12422431900D3D8BA /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DD2422431900D3D8BA /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		528323E8242246DF00D3D8BA /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528323E7242246DF00D3D8BA /* Environment.swift */; };
+		528323EA2422471C00D3D8BA /* EnvironmentImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528323E92422471C00D3D8BA /* EnvironmentImp.swift */; };
+		52C145202423484900C2C519 /* NetworkMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C1451F2423484900C2C519 /* NetworkMethods.swift */; };
+		52C145232423496E00C2C519 /* TranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C145222423496E00C2C519 /* TranslateService.swift */; };
+		52F6D32224236DE200711ADE /* TranslateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6D32124236DE200711ADE /* TranslateRouter.swift */; };
+		52F6D32424236DEA00711ADE /* RequestRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6D32324236DEA00711ADE /* RequestRouter.swift */; };
+		52F6D32724236E6A00711ADE /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6D32624236E6A00711ADE /* NetworkModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		528323E22422431900D3D8BA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				528323DF2422431900D3D8BA /* SnapKit.framework in Embed Frameworks */,
+				528323E12422431900D3D8BA /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5247EEF32420B499003E7756 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
 		5247EEF52420B5FB003E7756 /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
@@ -51,6 +78,16 @@
 		524E7FA82420AE36005D1B27 /* TranslaterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslaterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		524E7FAC2420AE36005D1B27 /* TranslaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslaterUITests.swift; sourceTree = "<group>"; };
 		524E7FAE2420AE36005D1B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5276E3F82423C1A6005C3C84 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		528323DC2422431900D3D8BA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		528323DD2422431900D3D8BA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		528323E7242246DF00D3D8BA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		528323E92422471C00D3D8BA /* EnvironmentImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentImp.swift; sourceTree = "<group>"; };
+		52C1451F2423484900C2C519 /* NetworkMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMethods.swift; sourceTree = "<group>"; };
+		52C145222423496E00C2C519 /* TranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateService.swift; sourceTree = "<group>"; };
+		52F6D32124236DE200711ADE /* TranslateRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TranslateRouter.swift; sourceTree = "<group>"; };
+		52F6D32324236DEA00711ADE /* RequestRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestRouter.swift; sourceTree = "<group>"; };
+		52F6D32624236E6A00711ADE /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528323DE2422431900D3D8BA /* SnapKit.framework in Frameworks */,
+				528323E02422431900D3D8BA /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +132,7 @@
 			children = (
 				5247EEEF2420B0C8003E7756 /* Launch */,
 				5247EEF02420B0D2003E7756 /* Main */,
+				5276E3F72423C18A005C3C84 /* Description */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -138,6 +178,7 @@
 				524E7FA02420AE36005D1B27 /* TranslaterTests */,
 				524E7FAB2420AE36005D1B27 /* TranslaterUITests */,
 				524E7F882420AE35005D1B27 /* Products */,
+				528323DB2422431900D3D8BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,6 +195,7 @@
 		524E7F892420AE35005D1B27 /* Translater */ = {
 			isa = PBXGroup;
 			children = (
+				528323E42422467A00D3D8BA /* Services */,
 				5247EEF12420B482003E7756 /* Core */,
 				5247EEEE2420B0C0003E7756 /* Flows */,
 				5247EEED2420B014003E7756 /* SupportingFiles */,
@@ -179,6 +221,77 @@
 			path = TranslaterUITests;
 			sourceTree = "<group>";
 		};
+		5276E3F72423C18A005C3C84 /* Description */ = {
+			isa = PBXGroup;
+			children = (
+				5276E3F82423C1A6005C3C84 /* DescriptionViewController.swift */,
+			);
+			path = Description;
+			sourceTree = "<group>";
+		};
+		528323DB2422431900D3D8BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				528323DD2422431900D3D8BA /* Alamofire.framework */,
+				528323DC2422431900D3D8BA /* SnapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		528323E42422467A00D3D8BA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				528323E52422468200D3D8BA /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		528323E52422468200D3D8BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				52F6D32024236DD000711ADE /* NetworkRouters */,
+				52C145212423495B00C2C519 /* NetworkServices */,
+				528323E6242246CB00D3D8BA /* Config */,
+				52F6D32524236E5500711ADE /* NetworkModels */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		528323E6242246CB00D3D8BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				528323E7242246DF00D3D8BA /* Environment.swift */,
+				528323E92422471C00D3D8BA /* EnvironmentImp.swift */,
+				52C1451F2423484900C2C519 /* NetworkMethods.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		52C145212423495B00C2C519 /* NetworkServices */ = {
+			isa = PBXGroup;
+			children = (
+				52C145222423496E00C2C519 /* TranslateService.swift */,
+			);
+			path = NetworkServices;
+			sourceTree = "<group>";
+		};
+		52F6D32024236DD000711ADE /* NetworkRouters */ = {
+			isa = PBXGroup;
+			children = (
+				52F6D32324236DEA00711ADE /* RequestRouter.swift */,
+				52F6D32124236DE200711ADE /* TranslateRouter.swift */,
+			);
+			path = NetworkRouters;
+			sourceTree = "<group>";
+		};
+		52F6D32524236E5500711ADE /* NetworkModels */ = {
+			isa = PBXGroup;
+			children = (
+				52F6D32624236E6A00711ADE /* NetworkModels.swift */,
+			);
+			path = NetworkModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,6 +302,8 @@
 				524E7F832420AE35005D1B27 /* Sources */,
 				524E7F842420AE35005D1B27 /* Frameworks */,
 				524E7F852420AE35005D1B27 /* Resources */,
+				528323E22422431900D3D8BA /* Embed Frameworks */,
+				528323E32422432700D3D8BA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -304,14 +419,44 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		528323E32422432700D3D8BA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		524E7F832420AE35005D1B27 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C145232423496E00C2C519 /* TranslateService.swift in Sources */,
 				524E7F8B2420AE35005D1B27 /* AppDelegate.swift in Sources */,
+				5276E3F92423C1A6005C3C84 /* DescriptionViewController.swift in Sources */,
+				528323E8242246DF00D3D8BA /* Environment.swift in Sources */,
+				52F6D32224236DE200711ADE /* TranslateRouter.swift in Sources */,
+				52F6D32724236E6A00711ADE /* NetworkModels.swift in Sources */,
 				5247EEF82420B696003E7756 /* MainCoordinator.swift in Sources */,
 				5247EEF42420B499003E7756 /* BaseCoordinator.swift in Sources */,
+				52F6D32424236DEA00711ADE /* RequestRouter.swift in Sources */,
+				528323EA2422471C00D3D8BA /* EnvironmentImp.swift in Sources */,
+				52C145202423484900C2C519 /* NetworkMethods.swift in Sources */,
 				5247EEF62420B5FB003E7756 /* ApplicationCoordinator.swift in Sources */,
 				5247EEFA2420B712003E7756 /* MainViewController.swift in Sources */,
 			);
@@ -480,6 +625,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Translater/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -498,6 +647,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Translater/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
