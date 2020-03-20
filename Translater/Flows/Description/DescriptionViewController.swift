@@ -2,14 +2,14 @@
 //  DescriptionViewController.swift
 //  Translater
 //
-//  Created by 18421820 on 19.03.2020.
+//  Created by Booharin on 19.03.2020.
 //  Copyright © 2020 Umbrella. All rights reserved.
 //
 
 import UIKit
 import SnapKit
 
-class DescriptionViewController: UIViewController {
+final class DescriptionViewController: UIViewController {
     
     var meaning: TranslateMeaning?
     private var wordImageView = UIImageView()
@@ -19,7 +19,7 @@ class DescriptionViewController: UIViewController {
         return EnvironmentImp.Release()
     }
     
-    lazy var translateService: TranslateService? = {
+    lazy private var translateService: TranslateService? = {
         let translateService = TranslateService(environment: environment)
         return translateService
     }()
@@ -42,6 +42,18 @@ class DescriptionViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.navigationController?.navigationBar.isHidden = false
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        if size.width < size.height {
+            wordImageView.snp.updateConstraints() {
+                $0.height.equalTo(480)
+            }
+        } else {
+            wordImageView.snp.updateConstraints() {
+                $0.height.equalTo(150)
+            }
+        }
     }
     
     private func addImageView() {

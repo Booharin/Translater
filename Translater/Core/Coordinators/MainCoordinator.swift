@@ -2,7 +2,7 @@
 //  MainCoordinator.swift
 //  Translater
 //
-//  Created by 18421820 on 17.03.2020.
+//  Created by Booharin on 17.03.2020.
 //  Copyright © 2020 Umbrella. All rights reserved.
 //
 

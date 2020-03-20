@@ -2,7 +2,7 @@
 //  MainViewController.swift
 //  Translater
 //
-//  Created by 18421820 on 17.03.2020.
+//  Created by Booharin on 17.03.2020.
 //  Copyright © 2020 Umbrella. All rights reserved.
 //
 
@@ -25,7 +25,7 @@ final class MainViewController: UIViewController {
         return EnvironmentImp.Release()
     }
     
-    lazy var translateService: TranslateService? = {
+    lazy private var translateService: TranslateService? = {
         let translateService = TranslateService(environment: environment)
         return translateService
     }()

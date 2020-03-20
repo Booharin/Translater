@@ -17,6 +17,7 @@
 		524E7FA22420AE36005D1B27 /* TranslaterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7FA12420AE36005D1B27 /* TranslaterTests.swift */; };
 		524E7FAD2420AE36005D1B27 /* TranslaterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524E7FAC2420AE36005D1B27 /* TranslaterUITests.swift */; };
 		5276E3F92423C1A6005C3C84 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276E3F82423C1A6005C3C84 /* DescriptionViewController.swift */; };
+		5276E3FC2424A8DC005C3C84 /* MockTranslateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5276E3FB2424A8DC005C3C84 /* MockTranslateService.swift */; };
 		528323DE2422431900D3D8BA /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DC2422431900D3D8BA /* SnapKit.framework */; };
 		528323DF2422431900D3D8BA /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DC2422431900D3D8BA /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		528323E02422431900D3D8BA /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528323DD2422431900D3D8BA /* Alamofire.framework */; };
@@ -79,6 +80,7 @@
 		524E7FAC2420AE36005D1B27 /* TranslaterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslaterUITests.swift; sourceTree = "<group>"; };
 		524E7FAE2420AE36005D1B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5276E3F82423C1A6005C3C84 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		5276E3FB2424A8DC005C3C84 /* MockTranslateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTranslateService.swift; sourceTree = "<group>"; };
 		528323DC2422431900D3D8BA /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		528323DD2422431900D3D8BA /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		528323E7242246DF00D3D8BA /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 			children = (
 				524E7FA12420AE36005D1B27 /* TranslaterTests.swift */,
 				524E7FA32420AE36005D1B27 /* Info.plist */,
+				5276E3FA2424A886005C3C84 /* Mocks */,
 			);
 			path = TranslaterTests;
 			sourceTree = "<group>";
@@ -227,6 +230,14 @@
 				5276E3F82423C1A6005C3C84 /* DescriptionViewController.swift */,
 			);
 			path = Description;
+			sourceTree = "<group>";
+		};
+		5276E3FA2424A886005C3C84 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5276E3FB2424A8DC005C3C84 /* MockTranslateService.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		528323DB2422431900D3D8BA /* Frameworks */ = {
@@ -466,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5276E3FC2424A8DC005C3C84 /* MockTranslateService.swift in Sources */,
 				524E7FA22420AE36005D1B27 /* TranslaterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
